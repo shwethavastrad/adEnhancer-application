@@ -54,7 +54,8 @@ $ mvn spring-boot:run
 ---
 
 #### Response
-```json{
+```json
+{
     "site": {
         "id": "foo123",
         "page": "http://www.foo.com/why-foo",
