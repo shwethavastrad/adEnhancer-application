@@ -1,0 +1,6 @@
+com/svastrad/adEnhancer/AdEnhancerApplicationTests.class
+com/svastrad/adEnhancer/config/TestConfig.class
+com/svastrad/adEnhancer/AdEnhanceControllerTest.class
+com/svastrad/adEnhancer/PublisherServiceTest.class
+com/svastrad/adEnhancer/RequestValidationTest.class
+com/svastrad/adEnhancer/DemographicsServiceTest.class
