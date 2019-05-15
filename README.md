@@ -1,8 +1,8 @@
-#Advertisement Request Enhancer
+# Advertisement Request Enhancer
 
-*dvertisement Request Enhancer* is a microservice which augments anincoming Ad request with contextual information like demographics, location etc. It leverages libraries and services from Spring Cloud and Netflix OSS to compose the system.
+*Advertisement Request Enhancer* is a microservice which augments anincoming Ad request with contextual information like demographics, location etc. It leverages libraries and services from Spring Cloud and Netflix OSS to compose the system.
 
-##Build
+## Build
 
 . Using Maven, build and package the application:
 +
@@ -11,7 +11,7 @@ $ mvn clean package -Dmaven.test.skip=true
 ----
 +
 
-##Run
+## Run
 
 . Start the Eureka Service
 +
@@ -35,11 +35,11 @@ $ mvn spring-boot:run
 ----
 
 
-##Test the Application
+## Test the Application
 
-###An example request and response is shown below
-###POST to http://127.0.0.1:8765/ad-enhancer-service/enhance
-####Request
+### An example request and response is shown below
+### POST to http://127.0.0.1:8765/ad-enhancer-service/enhance
+#### Request
 
 ```json
 {
@@ -57,7 +57,7 @@ $ mvn spring-boot:run
 ```
 ---
 
-####Response
+#### Response
 ```json{
     "site": {
         "id": "foo123",
