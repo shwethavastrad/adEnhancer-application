@@ -4,41 +4,37 @@
 
 ## Build
 
-. Using Maven, build and package the application:
-+
-----
+1.  Using Maven, build and package the application:
+```
 $ mvn clean package -Dmaven.test.skip=true
-----
-+
+```
 
 ## Run
 
-. Start the Eureka Service
-+
-----
+1. Start the Eureka Service
+```
 $ cd spring-boot-microservice-eureka-naming-server/
 $ mvn spring-boot:run
-----
+```
 
-. Start the AdEnhancer Service
-+
-----
+2. Start the AdEnhancer Service
+```
 $ cd adEnhancer/
 $ mvn spring-boot:run
-----
+```
 
-. Start the Zuul service
-+
-----
+3. Start the Zuul service
+```
 $ cd zuul-server-master/
 $ mvn spring-boot:run
-----
+```
 
 
 ## Test the Application
 
-### An example request and response is shown below
-### POST to http://127.0.0.1:8765/ad-enhancer-service/enhance
+ An example request and response is shown below:
+ <br>
+ POST to http://127.0.0.1:8765/ad-enhancer-service/enhance
 #### Request
 
 ```json
