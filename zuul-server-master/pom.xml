@@ -6,7 +6,7 @@
 	<groupId>com.svastrad.microservice.zuul.server</groupId>
 	<artifactId>zuul-server</artifactId>
 	<packaging>jar</packaging>
-	<name>Spring Cloud Netflix Zuul Server</name>
+	<name>spring-cloud-netflix-zuul-server</name>
 	<url>https://projects.spring.io/spring-cloud/</url>
     <version>1.0.0.BUILD-SNAPSHOT</version>
 

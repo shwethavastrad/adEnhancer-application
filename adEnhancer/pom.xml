@@ -11,8 +11,8 @@
     <groupId>com.svastrad</groupId>
     <artifactId>adEnhancer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>adEnhancer</name>
-    <description>Demo project for Spring Boot</description>
+    <name>com-svastrad-adEnhancer</name>
+    <description>AdEnhancer Microservice</description>
 
     <properties>
         <java.version>1.8</java.version>
