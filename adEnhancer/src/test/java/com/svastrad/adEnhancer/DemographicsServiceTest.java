@@ -6,6 +6,7 @@ import com.svastrad.adEnhancer.service.DemographicsService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.util.Assert;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -28,7 +29,7 @@ public class DemographicsServiceTest {
         CompletableFuture<Demographics> demographics = demographicsService.injectDemographics(site);
         CompletableFuture.allOf(demographics).join();
 
-        System.out.println("female: " + demographics.get().getPctFemale());
+        Assert.notNull(demographics.get().getPctFemale(), "Demograph metric");
 
     }
 

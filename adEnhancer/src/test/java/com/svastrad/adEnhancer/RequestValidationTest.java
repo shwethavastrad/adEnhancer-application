@@ -25,7 +25,7 @@ public class RequestValidationTest {
     public void init() {
 
         RestAssured.port = port;
-        RestAssured.baseURI = "http://localhost";
+        RestAssured.baseURI = "http://127.0.0.1:8765/ad-enhancer-service/";
     }
 
     @Test

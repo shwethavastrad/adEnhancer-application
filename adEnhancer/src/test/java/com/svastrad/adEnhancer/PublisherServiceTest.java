@@ -6,6 +6,7 @@ import com.svastrad.adEnhancer.service.PublisherService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.util.Assert;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -28,8 +29,7 @@ public class PublisherServiceTest {
         CompletableFuture<Publisher> publisher = publisherService.injectPublisher(site);
         CompletableFuture.allOf(publisher).join();
 
-        System.out.println("name: " + publisher.get().getName());
-        System.out.println("id: " + publisher.get().getId());
+        Assert.notNull(publisher.get().getId(), "Publisher id must not be null");
 
     }
 }

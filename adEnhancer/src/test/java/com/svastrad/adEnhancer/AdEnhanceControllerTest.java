@@ -1,15 +1,12 @@
 package com.svastrad.adEnhancer;
 
 import com.svastrad.adEnhancer.model.AdRequest;
-import com.svastrad.adEnhancer.model.PublisherQuery;
 import org.junit.Test;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
-
-import static org.junit.Assert.*;
 
 public class AdEnhanceControllerTest {
 
@@ -29,7 +26,7 @@ public class AdEnhanceControllerTest {
                 "\"user\": {\n" +
                 "\"id\": \"9cb89r\" }\n" +
                 "}\n";
-        String uri = "http://localhost:8100/enhance";
+        String uri = "http://127.0.0.1:8765/ad-enhancer-service/enhance";
         RestTemplate template = new RestTemplate();
         HttpEntity<String> entity = new HttpEntity<String>(requestJson, headers);
 
